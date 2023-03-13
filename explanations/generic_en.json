@@ -1,7 +1,7 @@
 {
   "LLIL_SET_REG": "Sets {llil.dest} to {llil.src}",
   "LLIL_PUSH": "Decrements the stack pointer by {llil.size}, then writes the value of {llil.src} onto the stack.",
-  "LLIL_CALL": "Calls the function at {llil.dest}",
+  "LLIL_CALL": "Calls the function at {llil.dest} with {llil.mlil.params} as input and returns to {llil.mlil.output}.",
   "LLIL_STORE": "Copies {llil.src} into memory at address {llil.dest} ({llil.size} bytes)",
   "LLIL_RET": "Pops the return pointer off the stack and jumps to that address.",
   "LLIL_NOP": "No Operation",
@@ -90,7 +90,7 @@
   "LLIL_FNEG": "-1 * {llil.src} (floating point)",
   "LLIL_FSQRT": "the square root of {llil.src}",
   "LLIL_FTRUNC": "{llil.src} (truncated)",
-  "LLIL_TAILCALL": "Calls {llil.dest} with {llil.params} as input and returns to {llil.output}",
+  "LLIL_TAILCALL": "Calls {llil.dest} with {llil.mlil.params} as input and returns from {llil.function.source_function.name}",
   "LLFC_E": "equal",
   "LLFC_NE": "not equal",
   "LLFC_SLT": "signed less than",
